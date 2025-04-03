@@ -1,0 +1,121 @@
+:root {
+    --accent-color1: rgb(138, 154, 91);
+    --accent-color2: pink;
+}
+
+body {
+    background-color: black;
+    color: var(--accent-color2);
+    text-align: center;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 25vw;
+    margin: auto;
+    height: 100vh;
+    text-align: center;
+}
+
+#profile-linkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2vw;
+    width: 100%;
+}
+
+#profile-picture {
+    width: 25vw;
+    border-radius: 50%;
+}
+
+h1 {
+    font-size: 300%;
+    margin: 2px;
+}
+
+h2, h3 {
+    width: 100%;
+    background-color: rgb(138, 154, 91);
+    color: black;
+}
+
+#projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+}
+
+.project-tile {
+    background-color: var(--accent-color1);
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem;
+}
+
+
+  
+#navbar {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--accent-color1);
+    color: black;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+#navbar a {
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+#contact-section {
+    width: 25vw;
+    margin: auto;
+}
+
+#contact-list {
+    text-align: left;
+}
+
+a {
+    color: var(--accent-color2);
+}
+
+#projects a {
+    color: black;
+}
+#projects a:hover {
+    color: var(--accent-color2);
+}
+
+#navbar a {
+    color: black;
+}
+a:hover {
+    color: white;
+}
+  
+@media only screen and (max-width: 720px) {
+    * {
+    font-size: 1rem;
+    }
+  }
